@@ -16,9 +16,16 @@ public class EmployeeOperationController {
 	private IEmployeemgmtService empService;
 	
 	@GetMapping("/")
-	public String ShowHome() {
+	public String showHome() {
 		return "home";
 	
 	}
+    @GetMapping("/home")
+    public String displayHome(){
+        return "home";
+    }
+
 	
 }
+
+
